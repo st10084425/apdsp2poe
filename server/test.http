@@ -22,7 +22,7 @@ Content-Type: application/json
 }
 
 ###
-POST https://localhost:5050/user/login HTTP/1.1
+POST http://localhost:5050/user/login HTTP/1.1
 Content-Type: application/json
 
 {
@@ -46,9 +46,9 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6ImRvbnRGb3JnZXQiLCJpYXQiOjE2OTY4NDM1MjksImV4cCI6MTY5Njg0NzEyOX0.nAwY3oqAWz0Yj1VtH5pZwpC_J3eBomk0i8t2aS6l2SE
 
 ###
-POST https://localhost:5050/record/create HTTP/1.1
+POST http://localhost:5050/record/create HTTP/1.1
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6InBhc3N3b3JkMTIzIiwiaWF0IjoxNjk2ODQ5NDc3LCJleHAiOjE2OTY4NTMwNzd9.aBZPACdhlhHWgDRAzZYI7gOF9MZ5KHGMV2clzL7D9f0
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6InBhc3N3b3JkMTIzIiwiaWF0IjoxNjk5Mjc0OTU0LCJleHAiOjE2OTkyNzg1NTR9.Gdu4VMPheksAm48-pL_PJ-kI7SUkY6zsbRUUoEQeWUY
 
 {
     "name":"priyanka",

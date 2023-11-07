@@ -9,7 +9,7 @@ import fs from "fs";
 import users from "./routes/user.mjs"
 
 import dotenv from "dotenv"
-import https from "https";
+import http from "http"; //changed this part
 import { nextTick } from "process";
 //import path from "path";
 
@@ -42,7 +42,7 @@ app.use ((reg,res,next)=>
 app.use("/record", records);
 app.use("/user",users);
 
-let server = https.createServer(options,app)
+let server = http.createServer(app)
 
 app.get('/record',(req,res)=>{
 //  res.send('HTTPS in ExpressJS')
@@ -51,5 +51,6 @@ app.get('/record',(req,res)=>{
 //start the Express server
 server.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);//on the left of number 1 on the keyboard, under escape
+  
 
 });
